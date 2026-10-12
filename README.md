@@ -42,17 +42,3 @@ The application uses two tables:
 - `friends` — stores user account information and friend counts.
 - `myfriends` — stores friendship relationships between users.
 
-Follow the database setup instructions in the project before using the application.
-
-## Project Structure
-
-- `index.php` — Home page and database initialisation.
-- `signup.php` — User registration.
-- `login.php` — User authentication.
-- `friendlist.php` — View and manage friends.
-- `friendadd.php` — Add new friends.
-- `logout.php` — Log out of the application.
-- `about.php` — Project information.
-- `settings.php` — Example database configuration.
-- `includes/` — Shared page components.
-- `style.css` — Stylesheet.
