@@ -38,10 +38,10 @@
         $query = "CREATE TABLE IF NOT EXISTS $sql_table (
                            friend_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
                            friend_email VARCHAR(50) NOT NULL,
-                           password VARCHAR(20) NOT NULL,
+                           password VARCHAR(255) NOT NULL,
                            profile_name VARCHAR(30) NOT NULL,
                            date_started DATE NOT NULL,
-                           num_of_friends INT UNSIGNED NOT NULL
+                           num_of_friends INT UNSIGNED NOT NULL DEFAULT 0
                    )";
 
         $result = mysqli_query($conn, $query);
@@ -55,8 +55,7 @@
         $sql_table1 = "myfriends";
         $query1 = "CREATE TABLE IF NOT EXISTS $sql_table1 (
                                     friend_id1 INT NOT NULL,
-                                    friend_id2 INT NOT NULL,
-                                    CHECK (friend_id1 != friend_id2) #check if friend_id2 is not equal to friend_id1
+                                    friend_id2 INT NOT NULL           
                    )";
 
         $result1 = mysqli_query($conn, $query1);
