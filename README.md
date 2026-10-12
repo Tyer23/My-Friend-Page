@@ -56,8 +56,3 @@ Follow the database setup instructions in the project before using the applicati
 - `settings.php` — Example database configuration.
 - `includes/` — Shared page components.
 - `style.css` — Stylesheet.
-
-## Author
-
-**Tyler Luc**
-
